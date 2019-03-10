@@ -18,7 +18,7 @@ int main()
 	{
 		for (int y = 0; y < image.rows; y++)
 		{
-            	image.at<Vec3b>(y, x)[0] = 255 - image.at<Vec3b>(y, x)[0];
+            		image.at<Vec3b>(y, x)[0] = 255 - image.at<Vec3b>(y, x)[0];
         	}
 	}
 
@@ -26,7 +26,7 @@ int main()
 	{
 		for (int y = 0; y < image.rows; y++)
 		{
-            	image.at<Vec3b>(y, x)[1] = 255 - image.at<Vec3b>(y, x)[1];
+            		image.at<Vec3b>(y, x)[1] = 255 - image.at<Vec3b>(y, x)[1];
         	}
 	}
 
@@ -34,7 +34,7 @@ int main()
 	{
 		for (int y = 0; y < image.rows; y++)
 		{
-            	image.at<Vec3b>(y, x)[2] = 255 - image.at<Vec3b>(y, x)[2];
+            		image.at<Vec3b>(y, x)[2] = 255 - image.at<Vec3b>(y, x)[2];
         	}
 	}
 
