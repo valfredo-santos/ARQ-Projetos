@@ -18,31 +18,31 @@ int main()
 	{
 		for (int y = 0; y < image.rows; y++)
 		{
-            image.at<Vec3b>(y, x)[0] = 255 - image.at<Vec3b>(y, x)[0];
-        }
+            	image.at<Vec3b>(y, x)[0] = 255 - image.at<Vec3b>(y, x)[0];
+        	}
 	}
 
 	for (int x = 0; x < image.cols; x++)
 	{
 		for (int y = 0; y < image.rows; y++)
 		{
-            image.at<Vec3b>(y, x)[1] = 255 - image.at<Vec3b>(y, x)[1];
-        }
+            	image.at<Vec3b>(y, x)[1] = 255 - image.at<Vec3b>(y, x)[1];
+        	}
 	}
 
 	for (int x = 0; x < image.cols; x++)
 	{
 		for (int y = 0; y < image.rows; y++)
 		{
-            image.at<Vec3b>(y, x)[2] = 255 - image.at<Vec3b>(y, x)[2];
-        }
+            	image.at<Vec3b>(y, x)[2] = 255 - image.at<Vec3b>(y, x)[2];
+        	}
 	}
 
     //Apresenta a Contagem de Tempo
     printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 
     //Apresenta a Imagem
-	namedWindow("Display window", WINDOW_NORMAL);
+    namedWindow("Display window", WINDOW_NORMAL);
     imshow("Display window", image);
     waitKey();
 
