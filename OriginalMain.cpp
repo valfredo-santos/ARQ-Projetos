@@ -15,7 +15,7 @@ int main()
 
     //Aplicando Filtro Negativo
     for (int x = 0; x < image.cols; x++)
-	{
+    {
 		for (int y = 0; y < image.rows; y++)
 		{
             		image.at<Vec3b>(y, x)[0] = 255 - image.at<Vec3b>(y, x)[0];
@@ -36,7 +36,7 @@ int main()
 		{
             		image.at<Vec3b>(y, x)[2] = 255 - image.at<Vec3b>(y, x)[2];
         	}
-	}
+    }
 
     //Apresenta a Contagem de Tempo
     printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
