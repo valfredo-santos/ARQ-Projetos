@@ -29,7 +29,7 @@ int main()
     printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 
     //Apresenta a Imagem
-	namedWindow("Display window", WINDOW_NORMAL);
+    namedWindow("Display window", WINDOW_NORMAL);
     imshow("Display window", image);
     waitKey();
 
