@@ -16,7 +16,7 @@ int main()
 
     //Aplicando o Filtro Negativo
     #pragma omp parallel default(none) shared(image)
-	{
+    {
         #pragma omp for
         for (int y = 0; y < image.rows; y++)
         {
@@ -28,13 +28,13 @@ int main()
                 }
             }
         }
-	}
+     }
 
     //Apresenta a Contagem de Tempo
     printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 
     //Apresenta a Imagem
-	namedWindow("Display window", WINDOW_NORMAL);
+    namedWindow("Display window", WINDOW_NORMAL);
     imshow("Display window", image);
     waitKey();
 
